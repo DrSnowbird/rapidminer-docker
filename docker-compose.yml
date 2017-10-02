@@ -1,0 +1,16 @@
+version: '3' 
+services:
+  rapidminer-docker:
+    image: openkbs/rapidminer-docker
+    build:
+      context: ./Dockerfile
+    container_name: docker-rapidminer-docker
+    environment:
+      - USER_ID=${USER_ID:-1000}
+      - GROUP_ID=${GROUP_ID:-1000}
+    env_file:
+      - ./docker.env
+    volumes:
+      - ./.rapidminer-docker:/home/developer/.rapidminer-docker
+      - ./workspace:/home/developer/workspace
+
