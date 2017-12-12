@@ -8,8 +8,8 @@ ENV HOME=/home/${USER_NAME}
         
 WORKDIR ${HOME}
 
-RUN wget -c https://s3.amazonaws.com/rapidminer.releases/rapidminer-studio/7.6.1/rapidminer-studio-7.6.1.zip && \
-    unzip rapidminer-studio-7.6.1.zip 
+RUN wget -c https://s3.amazonaws.com/rapidminer.releases/rapidminer-studio/8.0.1/rapidminer-studio-8.0.1.zip && \
+    unzip rapidminer-studio-8.0.1.zip 
 
 RUN mkdir -p ${HOME}/workspace
 VOLUME ${HOME}/workspace

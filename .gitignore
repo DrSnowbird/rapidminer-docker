@@ -1,3 +1,8 @@
+*.zip
+*.tar.gz
+*.tgz
+*.swp
+
 # Compiled class file
 *.class
 
