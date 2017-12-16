@@ -17,12 +17,6 @@ ENV TARGET_INSTALL_DIR="${TARGET_PRODUCT_NAME}-${TARGET_PRODUCT_VERSION}"
 ENV USER_NAME=${USER_NAME:-developer}
 ENV HOME=/home/${USER_NAME}
 
-<<<<<<< HEAD
-RUN wget -c https://s3.amazonaws.com/rapidminer.releases/rapidminer-studio/8.0.1/rapidminer-studio-8.0.1.zip && \
-    unzip rapidminer-studio-8.0.1.zip 
-=======
->>>>>>> b098ebbf2d0f9fa8d4c84436aa01cbe8b4d692d8
-
 ARG TARGET_PROJECT_DIR=${TARGET_PROJECT_DIR:-projects}
 ENV TARGET_PROJECT_DIR=${TARGET_PROJECT_DIR}
     
