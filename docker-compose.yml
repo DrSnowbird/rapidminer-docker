@@ -3,7 +3,8 @@ services:
   rapidminer-docker:
     image: openkbs/rapidminer-docker
     build:
-      context: ./Dockerfile
+      context: .
+      dockerfile: Dockerfile
     container_name: docker-rapidminer-docker
     environment:
       - USER_ID=${USER_ID:-1000}
